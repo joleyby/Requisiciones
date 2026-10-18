@@ -1,0 +1,60 @@
+# ── C# / .NET ──────────────────────────────────────────────
+# Resultados de compilación
+bin/
+obj/
+out/
+
+# Archivos de usuario de Visual Studio / Rider
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.csproj.user
+
+# Paquetes NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Resultados de tests
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# Publicación
+publish/
+
+# Secretos locales
+secrets.json
+
+# ── Rider / JetBrains ──────────────────────────────────────
+# Archivos de usuario específicos que NO deben versionarse
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# Configuración sensible o de alta rotación
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dbnavigator.xml
+.idea/**/dynamic.xml
+
+# ReSharper (integrado en Rider)
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Módulos y archivos de proyecto de Rider
+*.sln.iml
+riderModule.iml
+
+# ── Sistema operativo ──────────────────────────────────────
+.DS_Store
+Thumbs.db
+

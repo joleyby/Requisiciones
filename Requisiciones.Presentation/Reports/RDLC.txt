@@ -1,0 +1,9 @@
+Crear Reports\RptRequisicion.rdlc (Visual Studio, ~2 minutos):
+1. Clic derecho en la carpeta Reports > Agregar > Nuevo elemento > "Informe (RDLC)" > nombre: RptRequisicion.rdlc
+2. Datos del informe > Nuevo > Conjunto de datos: nombre "DsReporte", origen = Objeto
+   -> clase Requisiciones.Entities.ReporteRequisicionDto (refleja las columnas de vw_ReporteRequisicion).
+3. Diseño: encabezado con Solicitante, Departamento, Descripcion, Estado, PoliticaImpuesto;
+   tabla con Codigo, ItemDescripcion, Cantidad, PrecioUnitario, ItemSubtotal;
+   pie con Subtotal, Impuesto, Total (usar =First(Fields!Subtotal.Value, "DsReporte")).
+4. Propiedades del archivo: "Copiar al directorio de salida" = Copiar si es posterior (ya configurado en el csproj).
+El nombre del DataSet debe ser exactamente "DsReporte" (lo usa ReportForm.cs).
